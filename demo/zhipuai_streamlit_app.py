@@ -16,10 +16,8 @@ from dotenv import load_dotenv, find_dotenv
 
 
 # 加载环境变量，创建LLM
-# _ = load_dotenv(find_dotenv())    # read local .env file
-# zhipuai_api_key = os.environ['ZHIPUAI_API_KEY']
-
-zhipuai_api_key = "b5bf5261710be30782de8bb7b1fb5910.cxa0xKi92rPrtavU"  # 服务器上部署，实在找不到路径
+_ = load_dotenv(find_dotenv())    # read local .env file
+zhipuai_api_key = os.environ['ZHIPUAI_API_KEY']
 
 # 请求API，返回大模型的回答
 def generate_response(input_text, llm):
