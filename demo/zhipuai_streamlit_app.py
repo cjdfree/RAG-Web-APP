@@ -16,7 +16,7 @@ from dotenv import load_dotenv, find_dotenv
 
 
 # 加载环境变量，创建LLM
-_ = load_dotenv(find_dotenv())    # read local .env file
+_ = load_dotenv(find_dotenv("../.env"))    # read local .env file
 zhipuai_api_key = os.environ['ZHIPUAI_API_KEY']
 
 
