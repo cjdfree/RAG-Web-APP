@@ -18,7 +18,7 @@ from dotenv import load_dotenv, find_dotenv
 # 加载环境变量，创建LLM
 # _ = load_dotenv(find_dotenv("../env"))    # read local .env file
 # 部署到服务器时的路径
-_ = load_dotenv(find_dotenv("/mount/src/rag-web-app/env"))
+_ = load_dotenv(find_dotenv("/mount/src/rag-web-app/.env"))
 zhipuai_api_key = os.environ['ZHIPUAI_API_KEY']
 
 
